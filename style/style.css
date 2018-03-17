@@ -3,8 +3,10 @@
     font-size: 1rem;
     line-height: 1.5;
     color: #373a3c;
-    background-color: lightseagreen;
+    background-image:url('http://i.vimeocdn.com/video/460516322_1280x720.jpg');
     height: 1000px;
+    background-size: contain;
+    background-repeat: none;
     margin:0px;
 
 }

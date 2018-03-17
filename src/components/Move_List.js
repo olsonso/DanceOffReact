@@ -5,8 +5,9 @@ function handleClick(props) {
 	alert("you always win");
 }
 
-const Move = ({symbol})=> {
+const Move = ({color, symbol})=> {
 	const style = {
+		backgroundColor: color,
 		backgroundImage: "url(./public/img/" + symbol + ".png)"
 	}
 	return(
@@ -38,11 +39,11 @@ const Move = ({symbol})=> {
 			<div className= "game1">
 			<div className="circle-container">
 			<div className= "game-item">
-			<Move symbol={this.state.Thriller} />
-			<Move symbol={this.state.Disco}   />
-			<Move symbol={this.state.Breakdance}   />
-			<Move symbol={this.state.Chicken}   />
-			<Move symbol={this.state.Moonwalk}   />
+			<Move color="red" symbol={this.state.Thriller} />
+			<Move color="pink" symbol={this.state.Disco}   />
+			<Move color="blue" symbol={this.state.Breakdance}   />
+			<Move color="lightgreen" symbol={this.state.Chicken}   />
+			<Move color="orange" symbol={this.state.Moonwalk}   />
 			</div>
 			</div>
 			<div class="font-icon-wrapper" onClick={this.runGame}>
