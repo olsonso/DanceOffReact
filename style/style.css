@@ -1,3 +1,19 @@
+.remove-all-margin{
+margin:0 ! important;
+}
+h1{
+    color:white;
+    padding: 20px;
+    text-transform: uppercase;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+  margin:0 ! important;
+  padding: 0;
+     max-width: 1500px;
+}
+
 .body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1rem;
@@ -6,7 +22,8 @@
     background-image:url('http://i.vimeocdn.com/video/460516322_1280x720.jpg');
     height: 1000px;
     background-size: contain;
-    background-repeat: none;
+    background-repeat: no-repeat;
+    background-color: black;
     margin:0px;
 
 }
@@ -44,6 +61,7 @@ button2{
 
 } 
 
+
 button2:nth-child(1) {
   	    top: -49px;
     left: 22%;
@@ -64,8 +82,8 @@ button2:nth-child(4) {
     left: 3%;
 }
 button2:nth-child(5) {
-        top: -258px;
-    left: 62%;
+    top: -258px;
+    left: 59%;
 }
 
 button1{
@@ -85,9 +103,8 @@ button1{
     height: 100px;
 }
 
-.game {
+.game{
     content: "";
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -125,9 +142,9 @@ button1{
     height: 24em;
     padding: 2.8em;
      background-image: url('http://www.isbeingdesigned.com/images/rpsls.png');
-    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-    border: dashed 1px;
+     background-color: black;
      background-size: contain;
     border-radius: 50%;
     margin: 4.75em auto 0;
+
 }

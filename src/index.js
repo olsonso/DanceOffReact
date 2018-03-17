@@ -13,7 +13,8 @@ class App extends Component {
 		return (
 		<MuiThemeProvider>
 		<div>
-		<AppBarHeader/>
+		<center>
+		<h1>Lets have a dance off</h1></center>
 		<div>
 		<div className="game">
 			<MoveList/>

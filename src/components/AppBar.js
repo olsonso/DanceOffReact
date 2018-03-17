@@ -13,6 +13,7 @@ const styles = {
   title: {
     cursor: 'pointer',
     margin:0,
+    flexWrap: 'wrap',
   },
 };
 
@@ -23,9 +24,6 @@ const styles = {
 const AppBarHeader = () => (
   <AppBar
     title={<span style={styles.title}>LET'S HAVE A DANCE OFF</span>}
-    onTitleClick={handleClick}
-    iconElementLeft={<IconButton><NavigationClose /></IconButton>}
-    iconElementRight={<FlatButton label="Save" />}
   />
 );
 
