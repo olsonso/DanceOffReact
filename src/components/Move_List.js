@@ -1,5 +1,5 @@
 import React,  {Component}from 'react';
-import RaisedButton from './button';
+import RaisedButton from './Button';
 
 function handleClick(props) {
 	alert("you always win");
