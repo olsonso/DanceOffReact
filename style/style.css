@@ -1,0 +1,131 @@
+.body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #373a3c;
+    background-color: lightseagreen;
+    height: 1000px;
+    margin:0px;
+
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        padding-bottom: 60%;
+    }
+    100% {
+        opacity: 1;
+        padding-bottom: 100%;
+    }
+}
+
+
+button2{
+	position: relative;
+    transition-timing-function: cubic-bezier(0.05, 0.75, 0.095, 1);
+    transition-duration: 500ms;
+    transition-property: opacity, top, left, transform;
+	width: 6.5rem;
+	height: 6.5rem;
+	margin: 1.25rem;
+	border-radius: 50%;
+	background-color: #ddd;
+	text-align: center;
+	line-height: 12.5rem;
+	display: inline-block;
+	border: 2px solid #fff;
+	opacity: 1;
+	background-repeat:no-repeat;
+	background-position: center center;
+	background-size: 50%;
+
+} 
+
+button2:nth-child(1) {
+  	    top: -49px;
+    left: 22%;
+   
+}
+button2:nth-child(2) {
+        bottom: -37px;
+    left: -24%;
+    transform: translateX(-100%);
+}
+button2:nth-child(3) {
+       bottom: -36px;
+    left: 17%;;
+  transform: translateX(-50%);
+}
+button2:nth-child(4) {
+        bottom: -32px;
+    left: 3%;
+}
+button2:nth-child(5) {
+        top: -258px;
+    left: 62%;
+}
+
+button1{
+	padding: 10px;
+	width: 20px;
+	background-color: black;
+	border-radius: 10%;
+	color:white;
+	position: relative;
+	left:45%;
+	top:30px;
+}
+
+.button.is-move-btn {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.game {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    transition: opacity 500ms cubic-bezier(0.05, 0.75, 0.095, 1);
+}
+.game-body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.game-item {
+    position: absolute;
+    transition-timing-function: cubic-bezier(0.05, 0.75, 0.095, 1);
+    transition-duration: 500ms;
+    transition-property: opacity, top, left, transform;
+}
+
+.game-opponent {
+    position: absolute;
+    top: 10px;
+    right: 10%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s cubic-bezier(0.05, 0.75, 0.095, 1);
+}
+
+.circle-container {
+    position: relative;
+    width: 24em;
+    height: 24em;
+    padding: 2.8em;
+     background-image: url('http://www.isbeingdesigned.com/images/rpsls.png');
+    /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+    border: dashed 1px;
+     background-size: contain;
+    border-radius: 50%;
+    margin: 4.75em auto 0;
+}
