@@ -9,9 +9,6 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 class App extends Component { 
 	constructor() {
 		super();
-		this.state = {
-			score: ['1', '2']
-			}
 		}
 	
 
