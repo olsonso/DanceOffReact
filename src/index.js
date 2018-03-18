@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import MoveList from './components/Move_List';
 import Scores from './components/Score';
 import Header from './Components/Header';
-
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+
 
 class App extends Component { 
 	constructor() {
@@ -12,16 +13,16 @@ class App extends Component {
 		}
 	
 
-	render(){
+	render() {
 		return (
-		<MuiThemeProvider>
-		<div>
-			<Header />
+			<MuiThemeProvider>
 			<div>
-			<div className="game">
-				<MoveList/>	
-				<Scores/>
-			</div>
+				<Header />
+				<div>
+				<div className="game">
+					<MoveList/>	
+					<Scores/>
+				</div>
 		</div>
 	
 		</div>
