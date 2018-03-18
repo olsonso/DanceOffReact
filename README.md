@@ -1,4 +1,4 @@
 # Dance Off Game
 
-To Run:
+To Run: <br>
 npm start
