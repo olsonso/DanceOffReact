@@ -11,7 +11,7 @@ h1{
 .container{
   margin:0 ! important;
   padding: 0;
-     max-width: 1500px;
+    max-width: 1500px;
 }
 
 .body{
@@ -147,4 +147,34 @@ button1{
     border-radius: 50%;
     margin: 4.75em auto 0;
 
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  background-image: "url(https://www.freeiconspng.com/uploads/disco-ball-png-26.gif)"
+}
+
+.App-header {
+  background-color: black;
+  height: 200px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
 }

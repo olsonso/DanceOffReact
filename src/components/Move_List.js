@@ -1,7 +1,8 @@
 import React,  {Component}from 'react';
 import RaisedButton from './Button';
 
-function handleClick(props) {
+
+function handleClick() {
 	alert("you always win");
 }
 
@@ -11,11 +12,15 @@ const Move = ({color, symbol})=> {
 		backgroundImage: "url(./public/img/" + symbol + ".png)"
 	}
 	return(
-		<button2 style = {style}  onClick={handleClick}/>
+		<button2 
+			style = {style}  
+			onClick={handleClick} />
 		)
 	}
 
 	class MoveList extends Component{
+
+
 
 		constructor(props) {
 			super(props)
@@ -23,7 +28,7 @@ const Move = ({color, symbol})=> {
 			this.state = {}
 		}
 
-		runGame = () => {
+		setUpGame = () => {
 			this.setState({
 				Thriller: this.symbol[0],
 				Disco: this.symbol[1],
@@ -35,6 +40,7 @@ const Move = ({color, symbol})=> {
 
 
 		render() {
+	
 			return (
 			<div className= "game1">
 			<div className="circle-container">
@@ -46,7 +52,7 @@ const Move = ({color, symbol})=> {
 			<Move color="orange" symbol={this.state.Moonwalk}   />
 			</div>
 			</div>
-			<div class="font-icon-wrapper" onClick={this.runGame}>
+			<div class="font-icon-wrapper" onClick={this.setUpGame}>
 			<center>
 			<RaisedButton/> 
 			</center>

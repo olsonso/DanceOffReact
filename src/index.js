@@ -1,25 +1,32 @@
 import React , {Component} from 'react';
 import ReactDOM from 'react-dom';
 import MoveList from './components/Move_List';
-import AppBarHeader from './components/AppBar'
+import Scores from './components/Score';
+import Header from './Components/Header';
+
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component { 
-	constructor(props) {
-		super(props);
-	}
+	constructor() {
+		super();
+		this.state = {
+			score: ['1', '2']
+			}
+		}
+	
 
 	render(){
 		return (
 		<MuiThemeProvider>
 		<div>
-		<center>
-		<h1>Lets have a dance off</h1></center>
-		<div>
-		<div className="game">
-			<MoveList/>
-			</div>	
+			<Header />
+			<div>
+			<div className="game">
+				<MoveList/>	
+				<Scores/>
 			</div>
+		</div>
+	
 		</div>
 		</MuiThemeProvider>
 		
